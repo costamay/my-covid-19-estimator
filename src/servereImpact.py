@@ -1,4 +1,4 @@
 def severe(data):
-    currentlyInfected = data['reportedCases'] * 50
+    currentlyInfected = int(data['reportedCases']) * 50
     return currentlyInfected
 
