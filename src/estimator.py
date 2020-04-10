@@ -11,11 +11,11 @@ def estimator(data):
         "data": data,
         "impact": {
           'currentlyInfected':  impactdata(),
-          'infectionsByRequestedTime': impactdata() * (2 ** infectionsByRequestedTime())
+          'infectionsByRequestedTime': impactdata() * (2 ** infectionsByRequestedTime(data))
             }, 
         "severeImpact": {
           'currentlyInfected': severe(),
-          'infectionsByRequestedTime': severe() * (2 ** infectionsByRequestedTime())
+          'infectionsByRequestedTime': severe() * (2 ** infectionsByRequestedTime(data))
           }
        }
 
