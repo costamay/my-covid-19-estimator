@@ -1,4 +1,6 @@
 import math
+
+
 def infectionsByRequestedTime(data):
     if data['periodType'] == 'days':
         return math.floor((data['timeToElapse'])/3)

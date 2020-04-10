@@ -1,8 +1,6 @@
-import math
 from .infectionsByRequestedTime import infectionsByRequestedTime
 from .impact import impactdata
 from .servereImpact import severe
-
 
 
 def estimator(data):
@@ -10,7 +8,7 @@ def estimator(data):
       return {
         "data": data,
         "impact": {
-          'currentlyInfected':  impactdata(),
+          'currentlyInfected':  impactdata(data),
           'infectionsByRequestedTime': impactdata() * (2 ** infectionsByRequestedTime(data))
             }, 
         "severeImpact": {
