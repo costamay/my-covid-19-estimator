@@ -1,3 +1,3 @@
-def severeImpact(data):
+def severe(data):
     currentlyInfected = data['reportedCases'] * 50
     return currentlyInfected
