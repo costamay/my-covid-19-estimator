@@ -1,5 +1,3 @@
-
-
 def timeEstimate(data):
       if data['periodType'] == 'days':
             days = data['timeToElapse']
@@ -18,13 +16,13 @@ def estimator(data):
         "data": data,
         "estimate":{
           "impact":{
-            "currentlyInfected": currentlyInfectedImpact
-            "infectionsByRequestedTime": currentlyInfectedImpact * (2 ** (days // 3 )
+            "currentlyInfected": currentlyInfectedImpact,
+            "infectionsByRequestedTime": currentlyInfectedImpact * (2 ** (int(days / 3))
             
             },
           "severeImpact":{
-            "currentlyInfected":currentlyInfectedSevereImpact
-            "infectionsByRequestedTime": currentlyInfectedSevereImpact * (2 ** (days // 3)
+            "currentlyInfected":currentlyInfectedSevereImpact,
+            "infectionsByRequestedTime": currentlyInfectedSevereImpact * (2 ** (int(days / 3))
           }
         }
       }
